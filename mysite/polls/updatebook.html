@@ -1,0 +1,13 @@
+<div align="center">
+    <tr>
+        <form method="POST"> 
+            {% csrf_token %} 
+            <h5>Author:</h5>
+            {{ form.as_p }}
+
+            <h5>Book:</h5>
+            {{ formset.as_p }}
+            <input type="submit" value="submit">
+        </form>
+    </tr>
+</div>
